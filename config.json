@@ -1,0 +1,6 @@
+{
+    "input": "test/input",
+    "output": "test/output",
+    "processed": "test/processed",
+    "working": "test/working"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mp4-converter",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "q": "^1.0.1",
+    "handbrake-js": "^1.1.3",
+    "underscore": "^1.6.0"
+  }
+}
