@@ -8,8 +8,8 @@
     "test": "node index.js"
   },
   "dependencies": {
-    "forever": "^0.11.1",
-    "handbrake-js": "^2.0.6",
+    "forever": "^0.15.1",
+    "handbrake-js": "^2.0.7",
     "q": "^1.0.1",
     "underscore": "^1.6.0"
   }
