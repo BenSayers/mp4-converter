@@ -1,10 +1,10 @@
-#mp4-converter
+# mp4-converter
 
 > Automatically convert video files to mp4 files suitable for Apple TV 3 or higher, iPad and iPhone.
 
 This is a small pet project to automate the process of adding videos to my iTunes collection.
 
-##What it does
+## What it does
 
 The code will run in the background as a daemon.
 
@@ -16,14 +16,14 @@ When complete the converted file will be moved to the `output` folder and the fi
 
 If a `.srt` file is added with the same name as the video file it will be used as the subtitles file for the video. Otherwise all subtitles found in the original file will be included in the converted file.
 
-##How to use it
+## How to use it
 
-###Dependencies
+### Dependencies
 
 - Nodejs (tested with 4.2.2)
 - Npm (tested with 2.14.7)
 
-###Installing
+### Installing
 Install the nodejs dependencies:
 
 ```
@@ -41,7 +41,7 @@ Configure using `config.json`. An example configuration file looks like this:
 }
 ```
 
-###Using
+### Using
 Start the daemon by running:
 
 ```
@@ -59,3 +59,8 @@ View the logs by running:
 ```
 npm run-script log
 ```
+
+### Partially Converting Files
+It is sometimes useful to convert a section of a file rather then the entire file, for example when testing the converter. The converter can be instructed to partially convert a file by adding `##partial##[start index in seconds]##[duration in seconds]##` into the file name. For example `##partial##120##60##` will result in a converted file 60 seconds in duration, starting at 120 seconds in the input file.
+
+This addition to the filename should be added at the end of the filename, for example if the original file name is `my-video.mkv` (a 30 minute video), and you wanted to convert the 10 minutes of this video starting at 5 minutes, the filename to achieve this would be `my-video##partial##300##600##.mkv`.
