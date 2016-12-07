@@ -1,6 +1,8 @@
 {
   "name": "mp4-converter",
   "version": "0.0.0",
+  "author": "Ben Sayers",
+  "license": "Apache-2.0",
   "scripts": {
     "log": "./node_modules/forever/bin/forever logs index.js -f",
     "start": "./node_modules/forever/bin/forever start index.js",
